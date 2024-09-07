@@ -6,7 +6,10 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <Text>Hello world!</Text>
       {/*Load static images from files*/}
-      <Image source={require('./assets/icon.png')}/>
+      <Image source={{
+        width: 200,
+        height: 300,
+        uri: "https://picsum.photos/200/300"}}/>
       <StatusBar style="auto" />
     </SafeAreaView>
   );
